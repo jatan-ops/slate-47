@@ -5,9 +5,9 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "immutable": "4.0.0-rc.12",
-    "react": "16.8.0-alpha.1",
-    "react-dom": "16.8.0-alpha.1",
+    "immutable": "4.0.0",
+    "react": "16.8.0",
+    "react-dom": "16.8.0",
     "react-scripts": "2.0.3",
     "slate": "0.44.9",
     "slate-react": "0.21.15"
