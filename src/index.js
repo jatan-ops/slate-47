@@ -1,14 +1,22 @@
 import React, { useState, useRef } from "react";
 import ReactDOM from "react-dom";
+
 import { Editor } from "slate-react";
 import { Value } from "slate";
+
+import { isKeyHotkey } from 'is-hotkey'
 import value from "./value.json";
 import "./styles.css";
 
-const initialValue1 = Value.fromJSON(value);
+const DEFAULT_NODE = 'paragraph'
+
+const isBoldHotkey = isKeyHotkey('mod+b')
+const isItalicHotkey = isKeyHotkey('mod+i')
+const isUnderlinedHotkey = isKeyHotkey('mod+u')
+const isCodeHotkey = isKeyHotkey('mod+`')
 
 function App() {
-  const [value1, setValue] = useState(initialValue1);
+  const [value1, setValue] = useState(Value.fromJSON(value));
 
   const editor1 = useRef();
 
